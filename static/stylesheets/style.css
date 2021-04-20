@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding; 0:
+ }
+ /*----------------------(HOME Page) Header Section -------------------------------- */
+ .home-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../i mages/health.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+
+ nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:  100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    margin: 10px 0 40px:
+    font-size: 14px;
+    color: #fff;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+       }
+    .nav-links ul li{
+        display: block;
+      }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+       }
+       nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+       }
+       .nav-links ul{
+        padding: 30px;
+        }
+}
+
+/*-------------------------(HOME Page) Disease Section---------------------------------------*/
+
+.disease{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.disease-col{
+    flex-basis: 31%;
+    background: #FCDCDF;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.disease-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    }
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*-------------------------------------Heart Failure Page----------------------------------------*/
+
+.heart-header{
+    height: 60vh;
+    width: 100%;
+    background-image: url(../images/heart.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.container{
+    max-width: 900px;
+
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+
+}
+.container .title{
+    font-size: 30px;
+    font-weight: 500px;
+    position: relative;
+}
+.container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #9b59b6;
+}
+.container form .patient-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .patient-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.patient-details .input-box input{
+    height: 25px;
+    width: 100%
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.patient-details .input-box .details{
+    display: block;
+    font-weight: 500px;
+    margin-bottom: 5px;
+}
+.patient-details .input-box input:focus,
+.patient-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 80%;
+    width: 120px;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+@media(max-width: 700px){
+    .container{
+        max-width: 100%;
+    }
+    form .patient-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+/*-----------------------------------------------------Diabetes Page--------------------------------*/
+
+.diabetes-header{
+    height: 60vh;
+    width: 100%;
+    background-image: url(../images/diabetes.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/*-----------------------------------------------------Malaria Page--------------------------------*/
+
+.malaria{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.malaria-container{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+}
+
+.malaria-container .image-preview{
+    margin-top: 40px;
+    position: relative;
+    height: 300px;
+    width: 400px;
+    border: 2px dashed #c2cdda;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    display-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.image-preview .image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.image-preview .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.image-preview .icon{
+    margin-top: 30px;
+    font-size: 100px;
+    color: #9658fe;
+
+}
+.image-preview .text{
+    font-size: 20px;
+    font-weight: 500;
+    color: #5B5B7B;
+}
+.image-preview #cancel-btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+}
+.image-preview .file-name{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 18px;
+    background: #696969;
+}
+.malaria-container #custom-btn{
+    margin-top: 30px;
+    width; 100%;
+    height: 50px;
+    display: block;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
