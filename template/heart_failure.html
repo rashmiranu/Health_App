@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="with=device-width, initial-scale= 1.0">
+    <title>Health Care App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<!--------------------------------------Header section of body(IMAGE)---------------------------------->
+    <section class="heart-header">
+        <nav>
+            <a href="home.html"><img src="../static/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/heart">Heart Disease</a></li>
+                    <li><a href="/diabetes">Diabetes</a></li>
+                    <li><a href="/malaria">Malaria</a></li>
+                    <li><a href="/tuberculosis">Tuberculosis</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Heart Failure Prediction</h1>
+
+    </section>
+
+<!----------------------------------Form section of body-------------------------------------------->
+
+<div class="container">
+    <div class="title">Provide following details :</div>
+    <form action="/result" method="POST">
+        <div class="patient-details">
+            <div class="input-box">
+                <label for="age">Age</label>
+<!--                <span class="datails">Age</span>-->
+                <input type="text" id="age" name="age" placeholder="age of a person" required>
+            </div>
+            <div class="input-box">
+                <label for="anaemia">Anaemia</label>
+<!--                <span class="datails">Anaemia</span>-->
+                <input type="text" id="anaemia" name="anaemia" placeholder="1 for yes, 0 for no" required>
+            </div>
+            <div class="input-box">
+                <label for="creatinine_phosphokinase">Creatinine Phosphokinase</label>
+<!--                <span class="datails">Creatinine Phosphokinase</span>-->
+                <input type="text" id="creatinine_phosphokinase" name="creatinine_phosphokinase" placeholder="in mcg/L" required>
+            </div>
+            <div class="input-box">
+                <label for="diabetes">Diabetes</label>
+<!--                <span class="datails">Diabetes</span>-->
+                <input type="text" id="diabetes" name="diabetes" placeholder="1 for yes, 0 for no" required>
+            </div>
+            <div class="input-box">
+                <label for="ejection_fraction">Ejection Fraction</label>
+<!--                <span class="datails">Ejection Fraction</span>-->
+                <input type="text" id="ejection_fraction" name="ejection_fraction" placeholder="in percentage" required>
+            </div>
+            <div class="input-box">
+                <label for="high_blood_pressure">High Blood Pressure</label>
+<!--                <span class="datails">High Blood Pressure</span>-->
+                <input type="text" id="high_blood_pressure" name="high_blood_pressure" placeholder="1 for yes, 0 for no" required>
+            </div>
+            <div class="input-box">
+                <label for="platelets">Platelets</label>
+<!--                <span class="datails">Platelets</span>-->
+                <input type="text" id="platelets" name="platelets" placeholder="in kiloplatelets/mL" required>
+            </div>
+            <div class="input-box">
+                <label for="serum_creatinine">Serum Creatinine</label>
+<!--                <span class="datails">Serum Creatinine</span>-->
+                <input type="text" id="serum_creatinine" name="serum_creatinine" placeholder="in mg/dL" required>
+            </div>
+            <div class="input-box">
+                <label for="serum_sodium">Serum Sodium</label>
+<!--                <span class="datails">Serum Sodium</span>-->
+                <input type="text" id="serum_sodium" name="serum_sodium" placeholder="in mEq/L" required>
+            </div>
+            <div class="input-box">
+                <label for="sex">Sex</label>
+<!--                <span class="datails">Sex</span>-->
+                <input type="text" id="sex" name="sex" placeholder="1 for male, 0 for female" required>
+            </div>
+            <div class="input-box">
+                <label for="smoking">Smoking</label>
+<!--                <span class="datails">Smoking</span>-->
+                <input type="text" id="smoking" name="smoking" placeholder="1 for yes, 0 for no" required>
+            </div>
+            <div class="input-box">
+                <label for="time">Time</label>
+<!--                <span class="datails">Time</span>-->
+                <input type="text" id="time" name="time" placeholder="no. of days for follow up" required>
+            </div>
+        </div>
+
+        <div class="button">
+            <input type="submit" value="SUBMIT">
+        </div>
+
+    </form>
+ </div>
+
+<div class="footer" style="">Made with<span style="font-size:120%;color:red;"> &hearts; </span>by Rashmi</div>
+
+
+
+<!--JavaScript for Toggle Menu-->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

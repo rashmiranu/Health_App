@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="with=device-width, initial-scale= 1.0">
+    <title>Health Care App</title>
+    <style type="text/css">
+        body{
+            padding:  0;
+            margin: 0;
+        }
+        .result{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: "arial"
+            position: absolute;
+            margin-top: 20%;
+            left: 50%;
+
+        }
+        a:link, a:visited {
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover, a:active{
+            background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="result">
+     <h1>{{ prediction_text }}</h1>
+<!--    <a href="/malaria" target="_blank">Back to Malaria Prediction</a>-->
+    <a href="/" target="_blank">Back to Home</a>
+</div>
+</body>
+
+</html>
+</header>

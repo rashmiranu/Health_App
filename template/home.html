@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="with=device-width, initial-scale= 1.0">
+    <title>Health Care App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<!---------------------------------Header section of body----------------------------->
+    <section class="home-header">
+        <nav>
+            <a href="home.html"><img src="../static/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/heart">Heart Disease</a></li>
+                    <li><a href="/diabetes">Diabetes</a></li>
+                    <li><a href="/malaria">Malaria</a></li>
+                    <li><a href="/tuberculosis">Tuberculosis</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Machine Learning and Deep Learning Health App</h1>
+        <p>One of the chief ML applications in healthcare is the identification and diagnosis of diseases and
+            ailments which are otherwise considered hard-to-diagnose.<br>The prediction about the disease is made with
+            the help of the machine learning model which itself is trained on the thousands of the datasets.</p>
+    </div>
+    </section>
+
+<!----------------------------------Disease Section of body------------------------------------->
+    <section class="disease">
+        <h1>About Diseases In This App</h1>
+        <div class="row">
+            <div class="disease-col">
+                <h3>Heart Failure</h3>
+                <p>Heart failure can occur if the heart cannot pump (systolic) or fill (diastolic) adequately.<br>
+                    Symptoms : shortness of breath, fatigue, swollen legs and rapid heartbeat.<br>
+                    Treatments : eating less salt, limiting fluid intake and taking prescription medication.</p>
+            </div>
+            <div class="disease-col">
+                <h3>Diabetes</h3>
+                <p>Diabetes is a disease that occurs when your blood glucose is too high.<br>
+                    Symptoms : Increased Urination, increased hunger, unexplained weight loss.<br>
+                    Treatments : Insulin is the main treatment for type 1 diabetes. It replaces the hormone
+                    your body isn’t able to produce.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="disease-col">
+                <h3>Malaria</h3>
+                <p>A disease caused by a Plasmodium parasite, transmitted by the bite of infected Female Anopheles mosquitoes.<br>
+                    Symptoms : chills, fever and sweating, usually occurring a few weeks after being bitten.<br>
+                    Treatments : Treatment aims to eliminate the Plasmodium parasite from the bloodstream.</p>
+            </div>
+            <div class="disease-col">
+                <h3>Tuberculosis</h3>
+                <p>A potentially serious infectious bacterial disease that mainly affects the lungs.<br>
+                   Symptoms : usually include a cough, weight loss, night sweats and fever.<br>
+                   Treatments : Patients with active symptoms will require a long course of treatment involving
+                    multiple antibiotics.</p>
+            </div>
+        </div>
+    </section>
+
+<div class="footer" style="">Made with<span style="font-size:120%;color:red;"> &hearts; </span>by Rashmi</div>
+
+<!--JavaScript for Toggle Menu-->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

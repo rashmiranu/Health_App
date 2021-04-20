@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="with=device-width, initial-scale= 1.0">
+    <title>Health Care App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<!--------------------------------------Header section of body(IMAGE)---------------------------------->
+    <section class="diabetes-header">
+
+        <nav>
+            <a href="home.html"><img src="../static/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/heart">Heart Disease</a></li>
+                    <li><a href="/diabetes">Diabetes</a></li>
+                    <li><a href="/malaria">Malaria</a></li>
+                    <li><a href="/tuberculosis">Tuberculosis</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Diabetes Prediction</h1>
+
+    </section>
+
+<!----------------------------------Form section of body-------------------------------------------->
+
+<div class="container">
+    <div class="title">Provide following details :</div>
+    <form action="/result" method="POST">
+        <div class="patient-details">
+            <div class="input-box">
+                <label for="Pregnancies">Pregnancies</label>
+<!--                <span class="datails">Age</span>-->
+                <input type="text" id="Pregnancies" name="Pregnancies" placeholder="number of times pregnant" required>
+            </div>
+            <div class="input-box">
+                <label for="Glucose">Glucose</label>
+<!--                <span class="datails">Anaemia</span>-->
+                <input type="text" id="Glucose" name="Glucose" placeholder="glucose concentration" required>
+            </div>
+            <div class="input-box">
+                <label for="BloodPressure">Blood Pressure</label>
+<!--                <span class="datails">Creatinine Phosphokinase</span>-->
+                <input type="text" id="BloodPressure" name="BloodPressure" placeholder="in mm Hg" required>
+            </div>
+            <div class="input-box">
+                <label for="SkinThickness">Skin Thickness</label>
+<!--                <span class="datails">Diabetes</span>-->
+                <input type="text" id="SkinThickness" name="SkinThickness" placeholder="in mm" required>
+            </div>
+            <div class="input-box">
+                <label for="Insulin">Insulin</label>
+<!--                <span class="datails">Ejection Fraction</span>-->
+                <input type="text" id="Insulin" name="Insulin" placeholder="in muU/ml" required>
+            </div>
+            <div class="input-box">
+                <label for="BMI">BMI</label>
+<!--                <span class="datails">High Blood Pressure</span>-->
+                <input type="text" id="BMI" name="BMI" placeholder="in kg/(height in m)^2" required>
+            </div>
+            <div class="input-box">
+                <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function</label>
+<!--                <span class="datails">Platelets</span>-->
+                <input type="text" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" placeholder="diabetes pedigree function" required>
+            </div>
+            <div class="input-box">
+                <label for="Age">Age</label>
+<!--                <span class="datails">Serum Creatinine</span>-->
+                <input type="text" id="Age" name="age of a person" placeholder="in mg/dL" required>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <input type="submit" value="SUBMIT">
+        </div>
+
+    </form>
+ </div>
+
+<div class="footer" style="">Made with<span style="font-size:120%;color:red;"> &hearts; </span>by Rashmi</div>
+
+<!-----------JavaScript for Toggle Menu (mobile version)------------>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+<!------------------------------------------------------------------->
+
+</body>
+
+</html>
