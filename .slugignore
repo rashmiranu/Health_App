@@ -1,0 +1,5 @@
+/data
+/static
+/template
+/uploads
+*.md
