@@ -3,4 +3,9 @@
 /template
 /uploads
 *.md
+/__pycache__
+*.DS_Store
+*.gitattributes
+*.pkl
+*.h5
 
