@@ -3,8 +3,4 @@
 /template
 /uploads
 *.md
-*.pkl
-*.h5
-*.py
-.DS_Store
-.gitattributes
+
