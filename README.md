@@ -2,6 +2,7 @@
 This is a Machine Learning and Deep Learning project that can predict the chances of getting diseases like Heart_Failure, Diabetes, Malaria and Tuberculosis.<br>
 - Heart_Failure and Diabetes prediction uses Machine Learning Model <br>
 - Malaria and Tuberculosis prediction uses Deep Learning Model
+![Screenshot 2021-04-26 at 1 20 08 PM](https://user-images.githubusercontent.com/57981133/116048149-7e570400-a692-11eb-808c-d0185cff2599.jpg)
 
 ## This whole project is deployed on 
 Link to my project :
