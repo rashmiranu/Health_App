@@ -4,9 +4,6 @@ This is a Machine Learning and Deep Learning project that can predict the chance
 - Malaria and Tuberculosis prediction used Deep Learning Model where it utilised malaria parasitised cells and chest x-rays images.<br>
 ![Screenshot 2021-04-26 at 1 20 08 PM](https://user-images.githubusercontent.com/57981133/116048149-7e570400-a692-11eb-808c-d0185cff2599.jpg)
 
-## This whole project is deployed on 
-Link to my project :
-
 ## Dataset Used:
 Heart_Failure : https://www.kaggle.com/andrewmvd/heart-failure-clinical-data <br>
 Diabetes : <br>
