@@ -6,15 +6,15 @@ This is a Machine Learning and Deep Learning project that can predict the chance
 
 ## Dataset Used:
 Heart_Failure : https://www.kaggle.com/andrewmvd/heart-failure-clinical-data <br>
-Diabetes : <br>
+Diabetes : https://www.kaggle.com/uciml/pima-indians-diabetes-database <br>
 Malaria : https://www.kaggle.com/miracle9to9/files1 <br>
 Tuberculosis : https://www.kaggle.com/tawsifurrahman/tuberculosis-tb-chest-xray-dataset <br>
 
 ## Models link:
 Heart_Failure : https://github.com/rashmiranu/Health_App/blob/main/data/heart_failure.ipynb <br>
 Diabetes : https://github.com/rashmiranu/Health_App/blob/main/data/diabetes.ipynb <br>
-Malaria : <br>
-Tuberculosis : <br>
+Malaria : https://www.kaggle.com/rashmiranu/malaria-cell-detection-cnn-inceptionv3?scriptVersionId=61231291 <br>
+Tuberculosis : https://www.kaggle.com/rashmiranu/tuberculosis-chest-x-ray-inceptionv3?scriptVersionId=61225867 <br>
 
 ## Tools Used :
 - Python (3.8 version)
