@@ -4,7 +4,7 @@ This is a Machine Learning and Deep Learning project that can predict the chance
 - Malaria and Tuberculosis prediction used **Deep Learning Model** where it utilised malaria parasitised cells and chest x-rays images.<br>
 ![Screenshot 2021-04-26 at 1 20 08 PM](https://user-images.githubusercontent.com/57981133/116048149-7e570400-a692-11eb-808c-d0185cff2599.jpg)
 
-# About Data and Model:
+# About Datasets and Models:
 ## 1. Heart_Failure :
 
 [Link to Heart_Failure dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) <br>
@@ -27,7 +27,7 @@ Target variable is DEATH_EVENT which is boolean-type <br>
 
 ## 4. Tuberculosis :
 [Tuberculosis iamge_data](https://www.kaggle.com/tawsifurrahman/tuberculosis-tb-chest-xray-dataset) <br>
-
+<img width="417" alt="Screenshot 2021-05-05 at 2 59 33 PM" src="https://user-images.githubusercontent.com/57981133/117121775-b35e0780-adb2-11eb-97d4-93982280efd6.png"> <br>
 [Tuberculosis.ipynb](https://www.kaggle.com/rashmiranu/tuberculosis-chest-x-ray-inceptionv3?scriptVersionId=61225867) <br>
 **Model Used :** *InceptionV3 model of Transfer Learning*
 
