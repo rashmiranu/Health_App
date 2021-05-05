@@ -15,7 +15,6 @@ Target variable is DEATH_EVENT which is boolean-type <br>
 
 ### 2. Diabetes :
 [Link to Diabetes dataset](https://www.kaggle.com/uciml/pima-indians-diabetes-database) <br>
-
 <img width="725" alt="Screenshot 2021-05-05 at 2 48 40 PM" src="https://user-images.githubusercontent.com/57981133/117120569-1cdd1680-adb1-11eb-9631-16ade3960571.png">
 [Diabetes.ipynb](https://github.com/rashmiranu/Health_App/blob/main/data/diabetes.ipynb) <br>
 **Model Used :** *Xgboost*
