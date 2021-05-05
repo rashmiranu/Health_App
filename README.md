@@ -27,6 +27,7 @@ Target variable is DEATH_EVENT which is boolean-type <br>
 
 ## 4. Tuberculosis :
 [Tuberculosis iamge_data](https://www.kaggle.com/tawsifurrahman/tuberculosis-tb-chest-xray-dataset) <br>
+
 [Tuberculosis.ipynb](https://www.kaggle.com/rashmiranu/tuberculosis-chest-x-ray-inceptionv3?scriptVersionId=61225867) <br>
 **Model Used :** *InceptionV3 model of Transfer Learning*
 
