@@ -11,7 +11,7 @@ This is a Machine Learning and Deep Learning project that can predict the chance
 <img width="990" alt="Screenshot 2021-05-05 at 1 36 45 PM" src="https://user-images.githubusercontent.com/57981133/117112742-2497bd80-ada7-11eb-9185-096180bb93f0.png">
 Target variable is DEATH_EVENT which is boolean-type <br> 
 [Heart_Failure.ipynb](https://github.com/rashmiranu/Health_App/blob/main/data/heart_failure.ipynb) <br>
-**Model Used : ** *Random Forest with GridSearch and hyper parameter tuning*
+**Model Used :** *Random Forest with GridSearch and hyper parameter tuning*
 
 
 
