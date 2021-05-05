@@ -21,7 +21,7 @@ Target variable is DEATH_EVENT which is boolean-type <br>
 
 ## 3. Malaria :
 [Malaria image_data](https://www.kaggle.com/miracle9to9/files1) <br>
-
+<img width="420" alt="Screenshot 2021-05-05 at 2 56 29 PM" src="https://user-images.githubusercontent.com/57981133/117121458-3c287380-adb2-11eb-8dc4-f142523f8654.png"> <br>
 [Malaria.ipynb](https://www.kaggle.com/rashmiranu/malaria-cell-detection-cnn-inceptionv3?scriptVersionId=61231291) <br>
 **Model Used :** *InceptionV3 model of Transfer Learning*
 
